@@ -8,11 +8,13 @@ function printGreeting(name){
   console.log(printGreeting("Slimer"));
   
 // 2. Reverse Word Order
-  // console.log(reverseWordOrder("Ishmael me Call"));
-  
+function reverseWordOrder(word){
+  return word.split("").reverse().join("");
+}
 
+  console.log(reverseWordOrder("Ishmael me Call"));
 
-  // console.log(reverseWordOrder("I use Lâncome on my comb"));
+  console.log(reverseWordOrder("I use Lâncome on my comb"));
 
 // 3. Calculate
   // console.log(calculate(4, 3, "sub"));=> 1
