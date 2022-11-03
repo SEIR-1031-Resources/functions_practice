@@ -9,16 +9,34 @@ function printGreeting(name){
   
 // 2. Reverse Word Order
 function reverseWordOrder(word){
+  let reversedWord = [];
+  for(let i=word.length; i > 0; i--){
+    reversedWord += reversedWord[i];
+  }
   return word.split("").reverse().join("");
 }
 
-  console.log(reverseWordOrder("Ishmael me Call"));
+  // console.log(reverseWordOrder("Ishmael me Call"));
 
-  console.log(reverseWordOrder("I use Lâncome on my comb"));
+  // console.log(reverseWordOrder("I use Lâncome on my comb"));
 
 // 3. Calculate
-  // console.log(calculate(4, 3, "sub"));=> 1
-  // console.log(calculate(4, 3, "exp"));=> 64
+function calculate(num1, num2, operation){
+  if(operation === "add") {
+    return num1+num2;
+  }else if(operation === "sub") {
+    return num1-num2;
+  }if(operation === "mult") {
+    return num1*num2;
+  }if(operation === "div") {
+    return num1/num2;
+  }if(operation === "exp") {
+    return num1**num2;
+  }
+}
+
+  console.log(calculate(4, 3, "sub"));// 1
+  console.log(calculate(4, 3, "exp"));// 64
 
 
 // 4. Pandigital Numbers
@@ -34,7 +52,7 @@ function reverseWordOrder(word){
 
 
 // 5. Print Greeting 2.0
-const userInput = prompt("Please enter some input");
+// const userInput = prompt("Please enter some input");
 
 
 // 6. Functions + Loops
