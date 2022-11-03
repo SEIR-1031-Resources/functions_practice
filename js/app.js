@@ -10,15 +10,16 @@ function printGreeting(name){
 // 2. Reverse Word Order
 function reverseWordOrder(word){
   let reversedWord = [];
-  for(let i=word.length; i > 0; i--){
-    reversedWord += reversedWord[i];
+  for(let i=word.length-1; i >= 0; i--){
+    reversedWord += word[i];
   }
-  return word.split("").reverse().join("");
+  return reversedWord;
+  // return word.split("").reverse().join("");
 }
 
-  // console.log(reverseWordOrder("Ishmael me Call"));
+console.log(reverseWordOrder("Ishmael me Call"));
 
-  // console.log(reverseWordOrder("I use Lâncome on my comb"));
+console.log(reverseWordOrder("I use Lâncome on my comb"));
 
 // 3. Calculate
 function calculate(num1, num2, operation){
